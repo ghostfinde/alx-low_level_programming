@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Extracting the filename without extension
+filename=$(basename "$CFILE")
+extension="${filename##*.}"
+filename="${filename%.*}"
+
+# Generating the assembly code
+gcc -S $CFILE -o "$filename.s"
+
