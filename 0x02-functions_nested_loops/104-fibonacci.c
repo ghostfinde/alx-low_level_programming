@@ -12,7 +12,7 @@ int count;
 
 printf("%lu, %lu", fib1, fib2);
 
-for (count = 2; count < 98; count++)
+for (count = 3; count < 98; count++)
 {
 fib3 = fib1 + fib2;
 printf(", %lu", fib3);
