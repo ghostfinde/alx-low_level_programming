@@ -14,16 +14,16 @@ printf("%u, %u", fib1, fib2);
 
 sum = fib2;
 
-for (count = 3; count <= 98; count++)
+for (count = 3; count <= 100; count++)
 {
 fib3 = fib1 + fib2;
-if (fib3 <= 4000000)
-{
+if (fib3 > 4000000)
+break;
+
 printf(", %u", fib3);
 
 if (fib3 % 2 == 0)
 sum += fib3;
-}
 
 fib1 = fib2;
 fib2 = fib3;
