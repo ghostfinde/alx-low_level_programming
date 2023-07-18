@@ -1,10 +1,10 @@
 #include <stdio.h>
-
 /**
- * main - Entry point
+ * main - Entry point of the program
  *
- * Return: Always 0
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 int sum = 0;
@@ -18,5 +18,5 @@ sum += i;
 
 printf("%d\n", sum);
 
-return 0;
+return (0);
 }
