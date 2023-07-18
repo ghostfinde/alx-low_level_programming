@@ -4,7 +4,7 @@
  *
  * Return: Always 0
  */
-void fibonacci(void) 
+void fibonacci(void)
 {
 int i;
 unsigned long fib1 = 1, fib2 = 2, fib;
@@ -21,5 +21,5 @@ printf("\n");
 int main(void)
 {
 fibonacci();
-return 0;
+return (0);
 }
