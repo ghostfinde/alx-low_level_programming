@@ -1,8 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point
- *
- * Return: Always 0
+ * fibonacci - Prints the first 50 Fibonacci numbers
  */
 void fibonacci(void)
 {
@@ -18,6 +16,11 @@ fib2 = fib;
 }
 printf("\n");
 }
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
 int main(void)
 {
 fibonacci();
