@@ -4,15 +4,16 @@
  *
  * Return: Always 0
  */
-void fibonacci(void) {
+void fibonacci(void) 
+{
 int i;
-long long int fib1 = 1, fib2 = 2, fib;
+unsigned long fib1 = 1, fib2 = 2, fib;
+printf("%lu, %lu", fib1, fib2);
     
-printf("%lld, %lld", fib1, fib2);
-    
-for (i = 3; i <= 50; i++) {
+for (i = 3; i <= 50; i++)
+{
 fib = fib1 + fib2;
-printf(", %lld", fib);
+printf(", %lu", fib);
         
 fib1 = fib2;
 fib2 = fib;
@@ -20,7 +21,8 @@ fib2 = fib;
     
 printf("\n");
 }
-int main(void) {
+int main(void)
+{
 fibonacci();
 return 0;
 }
