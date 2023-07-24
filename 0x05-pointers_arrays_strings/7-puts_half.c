@@ -11,27 +11,27 @@ int length = 0;
 int half_length;
 char *ptr = str;
 
-// Calculate the length of the string
+/*Calculate the length of the string*/
 while (*ptr != '\0')
 {
 length++;
 ptr++;
 }
 
-// Calculate the half-length (rounded down for odd-length strings)
+/*Calculate the half-length (rounded down for odd-length strings)*/
 half_length = (length + 1) / 2;
 
-// Move the pointer to the second half of the string
+/* Move the pointer to the second half of the string*/
 ptr = str + half_length;
 
-// Print the second half of the string
+/* Print the second half of the string*/
 while (*ptr != '\0')
 {
 putchar(*ptr);
 ptr++;
 }
 
-// Print a new line after the second half
+/* Print a new line after the second half*/
 putchar('\n');
 }
 
