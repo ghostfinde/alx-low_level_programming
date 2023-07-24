@@ -13,6 +13,6 @@ putchar(*str);
 str++;
 }
     
-// Print a new line after the string
+/*Print a new line after the string*/
 putchar('\n');
 }
