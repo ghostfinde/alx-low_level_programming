@@ -12,8 +12,12 @@ int i = 0;
 while (str[i] != '\0')
 {
 putchar(str[i]);
-i += 2; /* Increment by 2 to skip every other character*/
-}
+i++; /* Increment by 1 to move to the next character*/
 
+if (str[i] == '\0') /* Check if the next character is the null-terminator*/
+break;
+
+i++; /*Increment by 1 to skip the next character*/
+}
 putchar('\n');
 }
